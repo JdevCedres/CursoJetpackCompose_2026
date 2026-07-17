@@ -11,8 +11,9 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.jdev.myfirstcomposeapp.components.layout.MyComplexLayout
-import com.jdev.myfirstcomposeapp.components.layout.PracticaComplexLayout
+import com.jdev.myfirstcomposeapp.components.MyButton
+import com.jdev.myfirstcomposeapp.components.MyImage
+import com.jdev.myfirstcomposeapp.components.MyPracticeTextField
 import com.jdev.myfirstcomposeapp.login.Greeting
 import com.jdev.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyComplexLayout (Modifier.padding(innerPadding))
+                    MyImage (Modifier.padding(innerPadding))
 
                 }
             }
