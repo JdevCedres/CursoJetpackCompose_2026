@@ -16,9 +16,6 @@ import com.jdev.myfirstcomposeapp.components.MyIcon
 import com.jdev.myfirstcomposeapp.components.MyImage
 import com.jdev.myfirstcomposeapp.components.MyNetworkImage
 import com.jdev.myfirstcomposeapp.components.MyPracticeTextField
-import com.jdev.myfirstcomposeapp.components.Progress
-import com.jdev.myfirstcomposeapp.components.ProgressAdvance
-import com.jdev.myfirstcomposeapp.components.ProgressAnimation
 import com.jdev.myfirstcomposeapp.login.Greeting
 import com.jdev.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
@@ -29,7 +26,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ProgressAnimation (Modifier.padding(innerPadding))
+                    MyIcon (Modifier.padding(innerPadding))
 
                 }
             }
