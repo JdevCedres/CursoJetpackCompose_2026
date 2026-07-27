@@ -1,4 +1,4 @@
-package com.jdev.myfirstcomposeapp.components
+package com.jdev.myfirstcomposeapp.components.practicas
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
