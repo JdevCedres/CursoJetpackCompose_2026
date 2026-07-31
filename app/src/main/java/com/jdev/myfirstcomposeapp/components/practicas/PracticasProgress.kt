@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
@@ -92,6 +93,21 @@ fun ColoresPersonalizados(modifier: Modifier = Modifier) {
         )
     }
 }
+
+// Ejercicio 5 - Progreso calculado con coerceln
+
+@Composable
+fun Pasos(pasosCompletados: Int, pasosTotales: Int, modifier: Modifier = Modifier){
+    val progreso = (pasosCompletados.toFloat() / pasosTotales).coerceIn(0f, 1f)
+
+    LinearProgressIndicator(
+        progress = { progreso },
+        modifier = modifier.fillMaxWidth()
+    )
+}
+
+// Ejercicio 6 - Botón deshabilitado durante carg
+
 
 
 
