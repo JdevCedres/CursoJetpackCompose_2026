@@ -114,3 +114,4 @@ fun Pasos(pasosCompletados: Int, pasosTotales: Int, modifier: Modifier = Modifie
 
 
 
+
