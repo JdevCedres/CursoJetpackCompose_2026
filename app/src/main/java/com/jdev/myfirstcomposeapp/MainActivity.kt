@@ -12,10 +12,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.jdev.myfirstcomposeapp.components.MyIcon
+import com.jdev.myfirstcomposeapp.components.practicas.CircularPersonal
 import com.jdev.myfirstcomposeapp.components.practicas.ColoresPersonalizados
+import com.jdev.myfirstcomposeapp.components.practicas.Formulario
 import com.jdev.myfirstcomposeapp.components.practicas.IndicadorDeterminado
 import com.jdev.myfirstcomposeapp.components.practicas.MostarOcultar
 import com.jdev.myfirstcomposeapp.components.practicas.PrimerIndicador
+import com.jdev.myfirstcomposeapp.components.practicas.ProgresoPasos
 import com.jdev.myfirstcomposeapp.login.Greeting
 import com.jdev.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
@@ -26,7 +29,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ColoresPersonalizados (Modifier.padding(innerPadding))
+                    CircularPersonal (Modifier.padding(innerPadding))
 
                 }
             }
