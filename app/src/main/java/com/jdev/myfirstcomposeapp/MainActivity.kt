@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.jdev.myfirstcomposeapp.components.MyCheckbox
 import com.jdev.myfirstcomposeapp.components.MyIcon
+import com.jdev.myfirstcomposeapp.components.MySlider
 import com.jdev.myfirstcomposeapp.components.MySwitch
 import com.jdev.myfirstcomposeapp.components.practicas.ColoresPersonalizados
 import com.jdev.myfirstcomposeapp.components.practicas.IndicadorDeterminado
@@ -28,7 +29,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyCheckbox (Modifier.padding(innerPadding))
+                    MySlider (Modifier.padding(innerPadding))
 
                 }
             }

@@ -73,7 +73,8 @@ fun MyCheckbox(modifier: Modifier = Modifier) {
                 uncheckedColor = Color.Yellow,
                 checkmarkColor = Color.Green,
                 disabledCheckedColor = Color.Gray,
-                disabledUncheckedColor = Color.Black
+                disabledUncheckedColor = Color.Black,
+                disabledIndeterminateColor = Color.Magenta
             )
         )
     }
