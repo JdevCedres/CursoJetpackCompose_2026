@@ -11,16 +11,14 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.jdev.myfirstcomposeapp.components.MedicationList
 import com.jdev.myfirstcomposeapp.components.MyCheckbox
-import com.jdev.myfirstcomposeapp.components.MyRadioButton
-import com.jdev.myfirstcomposeapp.components.MyRadioButtonList
-import com.jdev.myfirstcomposeapp.components.ParentCheckBoxes
-import com.jdev.myfirstcomposeapp.components.TriStateCheckBox
+import com.jdev.myfirstcomposeapp.components.MyIcon
+import com.jdev.myfirstcomposeapp.components.MySwitch
 import com.jdev.myfirstcomposeapp.components.practicas.ColoresPersonalizados
-import com.jdev.myfirstcomposeapp.components.login.Greeting
-import com.jdev.myfirstcomposeapp.components.practicas.SelectPill
-import com.jdev.myfirstcomposeapp.components.practicas.SymptomList
+import com.jdev.myfirstcomposeapp.components.practicas.IndicadorDeterminado
+import com.jdev.myfirstcomposeapp.components.practicas.MostarOcultar
+import com.jdev.myfirstcomposeapp.components.practicas.PrimerIndicador
+import com.jdev.myfirstcomposeapp.login.Greeting
 import com.jdev.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -30,7 +28,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MedicationList (Modifier.padding(innerPadding))
+                    MyCheckbox (Modifier.padding(innerPadding))
 
                 }
             }
