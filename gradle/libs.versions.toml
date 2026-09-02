@@ -1,5 +1,5 @@
 [versions]
-agp = "9.2.1"
+agp = "9.3.2"
 coil = "3.0.4"
 coreKtx = "1.10.1"
 junit = "4.13.2"
@@ -11,7 +11,7 @@ kotlin = "2.2.10"
 composeBom = "2026.02.01"
 constraintVersion = "1.1.0"
 lottieCompose = "6.7.1"
-material3 = "1.4.0"
+ui = "1.12.0"
 
 [libraries]
 androidx-compose-material-icons-extended = { module = "androidx.compose.material:material-icons-extended" }
@@ -35,7 +35,7 @@ androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-te
 androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
 constraint-layaout = {module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraintVersion"}
 lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottieCompose" }
-androidx-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "ui" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
