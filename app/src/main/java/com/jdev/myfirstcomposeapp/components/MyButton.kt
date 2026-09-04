@@ -9,13 +9,19 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.FilledTonalButton
+import androidx.compose.material3.FloatingActionButton
+import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
+
 import androidx.compose.ui.unit.dp
+import com.jdev.myfirstcomposeapp.R
+
 
 @Composable
 fun MyButton(modifier: Modifier = Modifier){
@@ -59,5 +65,12 @@ fun MyButton(modifier: Modifier = Modifier){
         FilledTonalButton(onClick = {}) {
             // En realidad es un button normal no tiene mucho sentido, la diferencia está en el color que tiene
         }
+    }
+}
+
+@Composable
+fun MyFAB(modifier: Modifier = Modifier) {
+    FloatingActionButton(onClick = {}) {
+        Icon(painter = painterResource(R.drawable.ic_add), contentDescription = "")
     }
 }

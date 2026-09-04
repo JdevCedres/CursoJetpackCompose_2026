@@ -21,6 +21,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import com.jdev.myfirstcomposeapp.components.MyFAB
 import com.jdev.myfirstcomposeapp.components.MyTopAppBar
 import com.jdev.myfirstcomposeapp.components.SelectorDosis
 import com.jdev.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
@@ -37,7 +38,8 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
                     topBar = { MyTopAppBar() },
-                    snackbarHost = { SnackbarHost(hostState = snackbarHostState) }
+                    snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
+                    floatingActionButton = { MyFAB() }
                 )
                 { innerPadding ->
                     Box(
